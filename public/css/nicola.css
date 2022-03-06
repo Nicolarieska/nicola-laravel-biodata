@@ -1,0 +1,80 @@
+body {
+    font-family: "Abel";
+    background: linear-gradient(#4B0082, #8B4513);
+  }
+  
+  .bagian {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .bagian {
+      min-height: 100vh;
+    }
+  }
+  
+  .col2 {
+    width: 50%;
+    float: left;
+    padding: 50px;
+    margin-right: 50px;
+  }
+  
+  .col2-l {
+    width: 45%;
+    float: left;
+  }
+  
+  @media (max-width: 1100px) {
+    .col2-l {
+      width: 55%;
+    }
+  }
+  
+  .nama {
+    font-size: 70px;
+    color: white;
+  }
+  
+  .panggilan {
+    color: white;
+  }
+  
+  .data {
+    font-size: 20px;
+    color: aquamarine;
+  }
+  
+  a:link.bio {
+    text-decoration: none;
+  }
+  
+  .bio {
+    display: inline-block;
+    width: 150px;
+    line-height: 150px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .baris {
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 1250px) {
+    .col2-r {
+      padding-left: 10px;
+    }
+  
+    .bio-1 {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .bio-2 {
+      bottom: 20px;
+    }
+  }
