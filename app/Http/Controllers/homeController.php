@@ -11,11 +11,11 @@ class homeController extends Controller
     public function home()
     {
         return view('home', [
-            "tittle" => "home", 
-            "nama" => home::getNama(),
-            "kelas" => home::getKelas(),
-            "kuliah" => home::getKuliah(1),
-            "matkul" => home::getKuliah(2)
+            "tittle" => home::first()->tittle, 
+            "nama" => home::first()->nama,
+            "kelas" => home::first()->kelas,
+            "kuliah" => home::first()->kuliah,
+            "matkul" => home::first()->matkul
         ]);
     }
 }

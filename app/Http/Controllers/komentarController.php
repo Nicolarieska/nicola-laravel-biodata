@@ -11,14 +11,14 @@ class komentarController extends Controller
     public function komentar()
     {
         return view('komentar', [
-            "tittle" => "komentar", 
-            "perumahan" => "Puri Cempaka Putih 1",
-            "kelurahan" => "Arjowinangun",
-            "kecamatan" => "Kedungkandang",
-            "kota" => "Kota Malang" , 
-            "kodepos" => "65132",
-            "provinsi" => "Jawa Timur",
-            "negara" => "Indonesia"
+            "tittle" => komentar::find(1)-> tittle, 
+            "perumahan" => komentar::find(1)-> alamat,
+            "kelurahan" => komentar::find(1)-> kelurahan,
+            "kecamatan" => komentar::find(1)-> kecamatan,
+            "kota" => komentar::find(1)-> kota, 
+            "kodepos" => komentar::find(1)-> kodepos,
+            "provinsi" => komentar::find(1)-> provinsi,
+            "negara" => komentar::find(1)-> negara
         ]);
     }
 }

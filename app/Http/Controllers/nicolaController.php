@@ -11,18 +11,18 @@ class nicolaController extends Controller
     public function biodata()
     {
         return view('biodata', [
-            "tittle" => "biodata", 
-            "nama" => nicola::getNama(),
-            "ttl" => nicola::getTtl(),
-            "jk" => nicola::getJk(),
-            "goldar" => nicola::getGoldar(), 
-            "alamat" => nicola::getAlamat(),
-            "pekerjaan" => nicola::getPekerjaan(),
-            "tk" => nicola::getSekolah(1),
-            "sd" => nicola::getSekolah(2),
-            "smp" => nicola::getSekolah(3), 
-            "sma" => nicola::getSekolah(4),
-            "kuliah" => nicola::getSekolah(5)
+            "tittle" => nicola::find(1)->tittle, 
+            "nama" => nicola::find(1)->namalengkap,
+            "ttl" => nicola::find(1)->ttl,
+            "jk" => nicola::find(1)->jk,
+            "goldar" => nicola::find(1)->goldar, 
+            "alamat" => nicola::find(1)->alamat,
+            "pekerjaan" => nicola::find(1)->pekerjaan,
+            "tk" => nicola::find(1)->tk,
+            "sd" => nicola::find(1)->sd,
+            "smp" => nicola::find(1)->smp, 
+            "sma" => nicola::find(1)->sma,
+            "kuliah" => nicola::find(1)->kuliah
         ]);
     }
 }
