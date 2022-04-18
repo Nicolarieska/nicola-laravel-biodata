@@ -32,8 +32,8 @@ Route::post('/login', [nicolaLoginController::class, 'inilogin']);
 
 Route::get('/dashboard', function(){
     return view('dashboard.index');
-});
+})->middleware('auth');
 
-Route::post('/logout', [nicolaLoginController::class, 'logout']);
+Route::post('/logout', [nicolaLoginController::class, 'logout'])->middleware('auth');
 
 
