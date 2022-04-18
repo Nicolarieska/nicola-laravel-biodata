@@ -38,6 +38,6 @@ class nicolaloginController extends Controller
     
         $request->session()->regenerateToken();
     
-        return redirect('/login');
+        return redirect('/home');
     }
 }
