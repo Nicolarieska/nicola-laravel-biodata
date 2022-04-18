@@ -15,7 +15,7 @@ class CreateNicolasTable extends Migration
     {
         Schema::create('nicolas', function (Blueprint $table) {
             $table->id();
-            $table->string('tittle');
+            $table->string('title');
             $table->string('namalengkap');
             $table->string('ttl');
             $table->string('jk');

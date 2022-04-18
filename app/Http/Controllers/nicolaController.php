@@ -11,7 +11,7 @@ class nicolaController extends Controller
     public function biodata()
     {
         return view('biodata', [
-            "tittle" => nicola::find(1)->tittle, 
+            "title" => nicola::find(1)->title, 
             "nama" => nicola::find(1)->namalengkap,
             "ttl" => nicola::find(1)->ttl,
             "jk" => nicola::find(1)->jk,

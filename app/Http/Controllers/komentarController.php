@@ -11,14 +11,14 @@ class komentarController extends Controller
     public function komentar()
     {
         return view('komentar', [
-            "tittle" => komentar::find(1)-> tittle, 
-            "perumahan" => komentar::find(1)-> alamat,
-            "kelurahan" => komentar::find(1)-> kelurahan,
-            "kecamatan" => komentar::find(1)-> kecamatan,
-            "kota" => komentar::find(1)-> kota, 
-            "kodepos" => komentar::find(1)-> kodepos,
-            "provinsi" => komentar::find(1)-> provinsi,
-            "negara" => komentar::find(1)-> negara
+            "title" => 'komentar', 
+            "perumahan" => komentar::first()->title,
+            "kelurahan" => komentar::first()->kelurahan,
+            "kecamatan" => komentar::first()->kecamatan,
+            "kota" => komentar::first()->kota, 
+            "kodepos" => komentar::first()->kodepos,
+            "provinsi" => komentar::first()->provinsi,
+            "negara" => komentar::first()->negara
         ]);
     }
 }
